@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Order Form</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="products.html">Products</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section>
+
+        <form>
+
+            <h2>Customer Details</h2>
+
+            <label>Name:</label>
+            <input type="text" required>
+            <br><br>
+
+            <label>Email:</label>
+            <input type="email" required>
+            <br><br>
+
+            <label>Address:</label>
+            <input type="text" required>
+            <br><br>
+
+            <h2>Order Details</h2>
+
+            <label>Select Product:</label>
+            <select required>
+                <option>Choose Product</option>
+                <option value="laptop">Laptop</option>
+                <option value="phone">Smartphone</option>
+            </select>
+            <br><br>
+
+            <label>Quantity:</label>
+            <input type="number" min="1" max="10" required>
+            <br><br>
+
+            <label>Payment Method:</label><br>
+            <input type="radio" id="cod" name="payment" required>
+            <label for="cod">Cash on Delivery</label>
+            <br>
+            <input type="radio" id="online" name="payment">
+            <label for="online">Online Payment</label>
+            <br><br>
+
+            <input type="submit" value="Place Order">
+            <input type="reset" value="Clear Form">
+
+        </form>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Online Store</p>
+    </footer>
+
+</body>
+
+</html>
