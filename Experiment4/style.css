@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #fdfbff, #e3f2fd);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #5c6bc0;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+
+nav {
+    background-color: #7986cb;
+    padding: 14px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #fff176;
+}
+
+.card {
+    width: 70%;
+    margin: 40px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+section {
+    flex: 1;
+    width: 70%;
+    margin: 40px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+    color: #3949ab;
+    margin-bottom: 20px;
+}
+
+.form-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-layout label {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+
+.input-field {
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #d0d0d0;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.input-field:focus {
+    outline: none;
+    border: 1px solid #5c6bc0;
+    box-shadow: 0 0 5px rgba(92, 107, 192, 0.4);
+}
+
+.radio-btn {
+    width: auto;
+    margin-right: 6px;
+}
+
+
+.payment-title {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+.btn-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.btn {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.submit-btn {
+    background-color: #42a5f5;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #1e88e5;
+}
+
+.reset-btn {
+    background-color: #ef5350;
+    color: white;
+}
+
+.reset-btn:hover {
+    background-color: #e53935;
+}
+
+footer {
+    text-align: center;
+    padding: 18px;
+    background-color: #5c6bc0;
+    color: white;
+}
