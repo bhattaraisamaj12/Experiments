@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0F172A, #0A2540);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+
+h1 {
+    margin-bottom: 40px;
+}
+
+
+.experiment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.experiment-list li {
+    margin: 15px 0;
+}
+
+.experiment-list a {
+    text-decoration: none;
+    background-color: #2563EB;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.experiment-list a:hover {
+    background-color: #1E40AF;
+}
