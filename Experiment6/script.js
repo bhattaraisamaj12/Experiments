@@ -24,7 +24,7 @@ document.getElementById("Submit").onclick = function () {
     const email = document.getElementById("Email").value;
     const country = document.getElementById("Country").value;
     const gender = document.querySelector('.gender:checked');
-    const hobbies = document.querySelectorAll('.Hobbies:checked');
+    const categories = document.querySelectorAll('.categories:checked');
     const birthDate = new Date(document.getElementById("date").value);
     const today = new Date();
 
@@ -91,11 +91,26 @@ document.getElementById("Submit").onclick = function () {
         return;
     }
 
-    // Hobby selection
-    if (hobbies.length === 0) {
-        alert("Select at least one hobby");
+    // catagory selection
+    if (categories.length === 0) {
+        alert("Select at least one catagory");
         return;
     }
 
-    alert("Registration Successful!");
+    const resultDiv = document.getElementById("result");
+    const selectedGender = gender.value;
+    let selectedCatagories = [];
+    categories.forEach(category => {
+        selectedCatagories.push(category.value);
+    });
+
+    resultDiv.innerHTML = `
+    <h2>Registration Successful!</h2>
+    <p>Username: ${username}</p>
+    <p>Email: ${email}</p>
+    <p>Age: ${age}</p>
+    <p>Country: ${country}</p>
+    <p>Gender: ${selectedGender}</p>
+    <p>Selected Options: ${selectedCatagories.join(", ")}</p>
+`;
 };
