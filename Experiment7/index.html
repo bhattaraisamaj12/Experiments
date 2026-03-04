@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="formContainer">
+            <form id="registerForm">
+                <h1>Register Here</h1>
+                <input type="text" class="input" id="Username" placeholder="Username">
+                <input type="email" class="input" id="Email" placeholder="Email">
+                <input type="password" class="input" id="Password" placeholder="Password">
+                <input type="password" class="input" id="ConfirmPassword" placeholder="Confirm Password">
+
+                <label class="show-pass">
+                    <input type="checkbox" id="togglePassword">
+                    Show Password
+                </label>
+                <p>Password must contain one uppercase and one number.</p>
+                <input type="date" class="input" id="date">
+
+                <select class="input" id="Country">
+                    <option value="">Select Country</option>
+                    <option value="india">India</option>
+                    <option value="nepal">Nepal</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="australia">Australia</option>
+                </select>
+                <div>
+                    <label>
+                        <input type="radio" name="gender" value="male" class="gender">
+                        Male
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender" value="female" class="gender">
+                        Female
+                    </label>
+                </div>
+
+                <div>
+                    <h3>Product Categories</h3>
+
+                    <label><input type="checkbox" class="categories" value="electronics"> Electronics</label>
+                    <label><input type="checkbox" class="categories" value="fashion"> Fashion</label>
+                    <label><input type="checkbox" class="categories" value="home"> Home & Furniture</label>
+                    <label><input type="checkbox" class="categories" value="beauty"> Beauty</label>
+                    <label><input type="checkbox" class="categories" value="sports"> Sports</label>
+                </div>
+                <button type="submit" id="Submit">Register</button>
+        </div>
+            </form>
+            <div id="result"></div>
+                <div id="actions">
+                    <button id="copyBtn">Copy Result</button>
+                    <button id="downloadBtn">Download CSV</button>
+                </div>
+            
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
